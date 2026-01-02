@@ -82,7 +82,7 @@ export default function OnboardingWelcome({ navigation }) {
             <Animated.View style={{ opacity: fadeAnim }}>
               <TouchableOpacity
                 style={styles.button}
-                onPress={() => navigation.navigate('Signup')}
+                onPress={() => navigation.navigate('OnboardingSteps')}
                 activeOpacity={0.8}
               >
                 <View style={styles.buttonCircle}>
