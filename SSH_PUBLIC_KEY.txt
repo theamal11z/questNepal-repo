@@ -1,0 +1,1 @@
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPUDuOH/tiDEAqCq8m6R/4My3p8YL7pvbeL/bl1jgWej theamal11z@gmail.com
