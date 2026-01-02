@@ -19,14 +19,13 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
       <NavigationContainer>
         <Stack.Navigator
           initialRouteName="OnboardingWelcome"
           screenOptions={{
             headerShown: false,
             animation: 'fade',
-            animationDuration: 300,
           }}
         >
           <Stack.Screen name="OnboardingWelcome" component={OnboardingWelcome} />
