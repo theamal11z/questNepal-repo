@@ -1,0 +1,60 @@
+╔══════════════════════════════════════════════════════════════════════╗
+║                                                                      ║
+║              EXPO GO ERROR - QUICK FIX REFERENCE                     ║
+║                                                                      ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+ERROR: java.lang.String cannot be cast to java.lang.Boolean
+
+SOLUTION: ✅ FIXED
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHAT WAS CHANGED:
+
+1. app.json:
+   ❌ REMOVED: newArchEnabled: true
+   ❌ REMOVED: edgeToEdgeEnabled: true
+   ✅ CHANGED: userInterfaceStyle to "dark"
+   ✅ UPDATED: backgroundColor to "#0a0a0a"
+   ✅ ADDED: Bundle identifiers
+
+2. App.js:
+   ❌ REMOVED: animationDuration property
+   ✅ CHANGED: StatusBar style to "light"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+HOW TO TEST:
+
+1. Pull latest changes:
+   git pull origin main
+
+2. Clear cache and start:
+   cd quest-nepal-app
+   npx expo start --clear
+
+3. Scan QR code with Expo Go
+
+4. App should load without errors!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+WHY IT HAPPENED:
+
+- newArchEnabled is for development builds only
+- edgeToEdgeEnabled is Android 15+ feature
+- Both cause type casting errors in Expo Go
+- Expo Go has limited native feature support
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+DOCUMENTATION:
+
+Full details: quest-nepal-app/EXPO_GO_FIX.md
+Repository: https://github.com/theamal11z/questNepal-repo
+Commit: c720bb1
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STATUS: ✅ FIXED & PUSHED TO GITHUB
